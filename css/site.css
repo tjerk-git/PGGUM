@@ -19,9 +19,14 @@ h1{
     margin-bottom: 1.6rem;
 }
 
-section{
+
+article{
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+section{
+
 }
 
 body{
@@ -37,6 +42,12 @@ p{
 
 .full-width{
   width: 100%;
+}
+
+.full-width img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .readable-article{
