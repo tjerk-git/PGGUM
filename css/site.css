@@ -48,6 +48,10 @@ p{
   padding-left: 2rem;
 }
 
+.split{
+  width:50%;
+}
+
 .full-width{
   width: 100%;
 }
@@ -128,6 +132,10 @@ p{
     background-color: #F6F6F6;
 }
 
+footer{
+  display:flex;
+}
+
 @keyframes gradient {
     0% {
         background-position:0 50%
@@ -151,5 +159,12 @@ p{
   .column{
     width: 100%;
     padding-left: 0;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+  .split{
+    width: 100%;
   }
 }
