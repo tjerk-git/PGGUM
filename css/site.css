@@ -14,30 +14,38 @@ html{
 
 h1{
     font-size: 3.6rem;
-    font-weight: 700;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+h2{
+    font-size: 2.8rem;
+    font-weight: 400;
     line-height: 1.2;
     margin-bottom: 1.6rem;
 }
 
 
-article{
+section{
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-section{
-
-}
-
 body{
   color: #000000;
+  font-family: 'Inter', sans-serif;
 }
-
 
 p{
   font-size: 1.6rem;
   line-height: 1.5;
   margin-bottom: 1.6rem;
+}
+
+
+.column{
+  padding-left: 2rem;
 }
 
 .full-width{
@@ -62,6 +70,14 @@ p{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   max-width: 64rem;
+  overflow: hidden;
+}
+
+.columns{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  max-width: 94rem;
+  overflow: hidden;
 }
 
 .flex-col {
@@ -84,6 +100,12 @@ p{
     margin-right: auto;
 }
 
+.pink-gradient{
+  background: linear-gradient(-45deg,#c87eae,#6e9bcf);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
 .pink{
     background-color: #FF79A3;
 }
@@ -92,14 +114,42 @@ p{
     background-color: #FDC400;
 }
 
-.green{
-    background-color: #02AF70;
+.green-gradient{
+    background: linear-gradient(-45deg,#02AF70,#017857);
+    background-size: 400% 400%;
 }
 
 .orange{
-    background-color: #FE9A61;
+    background: linear-gradient(-45deg,#FE9A61,#FDC400);
+    background-size: 400% 400%;
 }
 
 .grey{
     background-color: #F6F6F6;
+}
+
+@keyframes gradient {
+    0% {
+        background-position:0 50%
+    }
+
+    50% {
+        background-position:100% 50%
+    }
+
+    to {
+        background-position:0 50%
+    }
+}
+
+@media (max-width: 768px) {
+  .columns{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column{
+    width: 100%;
+    padding-left: 0;
+  }
 }
